@@ -1,8 +1,11 @@
+import { Route, Switch } from "react-router-dom";
+import Home from "./pages/Home";
+
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">Portfolio</h1>
-    </div>
+    <Switch>
+      <Route path="/" component={Home} />
+    </Switch>
   );
 }
 
