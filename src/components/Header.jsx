@@ -31,9 +31,9 @@ export default function Header() {
 
         {isActive && (
           <nav className="landscape:hidden flex flex-col items-center p-3 rounded-md bg-dark-200 mt-3 animate-smooth">
-            <Link className="text-lg w-full text-center rounded-md py-3 hover:border hover:border-gray-light text-gray-light" to="/projects">Projects</Link>
-            <Link className="text-lg w-full text-center rounded-md py-3 hover:border hover:border-gray-light text-gray-light" to="/about">About</Link>
-            <Link className="text-lg w-full text-center rounded-md py-3 hover:border hover:border-gray-light text-gray-light" to="/contact">Contact</Link>
+            <Link className="text-lg w-full text-center rounded-md py-3 border border-dark-200 hover:border-gray-light text-gray-light" to="/projects">Projects</Link>
+            <Link className="text-lg w-full text-center rounded-md py-3 border border-dark-200 hover:border-gray-light text-gray-light" to="/about">About</Link>
+            <Link className="text-lg w-full text-center rounded-md py-3 border border-dark-200 hover:border-gray-light text-gray-light" to="/contact">Contact</Link>
           </nav>
         )}
       </div>
