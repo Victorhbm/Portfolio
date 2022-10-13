@@ -4,8 +4,10 @@ import SectionAbout from "../components/SectionAbout";
 export default function Home() {
   return (
     <div className="font-inter">
-      <Header />
-      <SectionAbout />
+      <div className="min-h-screen bg-dark text-light">
+        <Header />
+        <SectionAbout />
+      </div>
     </div>
   )
 }
