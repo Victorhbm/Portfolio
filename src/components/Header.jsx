@@ -14,11 +14,11 @@ export default function Header() {
     <header className="bg-dark text-light">
       <div className="container mx-auto max-w-[1200px] px-5 py-7 border-b-2 border-dark-200">
         <div className="flex justify-between items-center">
-          <h1 className="text-2xl font-medium text-blue">Portfolio</h1>
+          <Link className="text-2xl font-medium text-blue" to="/">Portfolio</Link>
           <nav className="portrait:hidden">
-            <Link className="mr-10 text-lg text-gray-light" to="/projects">Projects</Link>
-            <Link className="mr-10 text-lg text-gray-light" to="/about">About</Link>
-            <Link className="text-lg text-gray-light" to="/contact">Contact</Link>
+            <Link className="mr-10 text-lg hover:text-blue  text-gray-light" to="/projects">Projects</Link>
+            <Link className="mr-10 text-lg hover:text-blue text-gray-light" to="/about">About</Link>
+            <Link className="text-lg hover:text-blue  text-gray-light" to="/contact">Contact</Link>
           </nav>
           <nav className="landscape:hidden">
             <IconContext.Provider value={{ size: "2.5em" }}>
