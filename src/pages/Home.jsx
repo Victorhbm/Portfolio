@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import SectionAbout from "../components/SectionAbout";
+import Tecnologies from "../components/Tecnologies";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
         <Header />
         <SectionAbout />
       </div>
+      <Tecnologies />
     </div>
   )
 }
