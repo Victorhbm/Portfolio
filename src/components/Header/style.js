@@ -9,6 +9,9 @@ export const Container = tw.div`
   py-7
   border-b-2
 
+  sm:px-10
+  lg:xl:px-5
+
   border-dark-200
 `
 
