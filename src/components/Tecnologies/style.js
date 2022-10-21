@@ -17,7 +17,8 @@ export const SectionTitle = tw.h2`
 
 export const SectionSubtitle = tw.h3`
   text-xl
-  my-5
+  mt-5
+  mb-3
 `
 
 export const TecnologiesContainer = tw.div`
@@ -31,8 +32,8 @@ export const TecnologiesContent = tw.div`
   rounded-md
   items-center
   text-gray-light
-  mr-2
-  mb-2
+  mr-3
+  mb-3
   p-3
   bg-dark
 `
