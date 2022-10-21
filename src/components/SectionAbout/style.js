@@ -9,6 +9,12 @@ export const Container = tw.section`
   flex
   flex-col
   justify-between
+
+  sm:px-10
+  lg:xl:px-5
+  landscape:flex-row-reverse
+  landscape:mt-20
+  landscape:items-center
 `
 
 export const ImgContainer = tw.div`
@@ -17,14 +23,17 @@ export const ImgContainer = tw.div`
   duration-300
   ease-in-out
   hover:scale-110
-  mx-auto
-  mb-14
   rounded-full
   w-[200px]
   h-[200px]
   lg:w-[400px]
   lg:h-[400px]
+  md:w-[300px]
+  md:h-[300px]
   overflow-hidden
+
+  portrait:mb-14
+  portrait:mx-auto
 
   hover:ring-offset-light
   ring-light
@@ -36,18 +45,27 @@ export const TextContainer = tw.div`
   text-center
   uppercase
   font-semibold
+
+  landscape:text-left
 `
 
 export const Title = tw.h1`
   text-3xl
   my-2
-  font-bold
+
+  lg:text-6xl
+  sm:my-6
+  sm:text-5xl
 
   text-blue
 `
 
 export const SubTitle = tw.h2`
-  tracking-[0.2em]
+  font-normal
+
+  portrait:tracking-[0.2em]
+  lg:text-3xl
+  sm:text-2xl
 `
 
 export const ButtonsContainer = tw.div`
@@ -55,6 +73,9 @@ export const ButtonsContainer = tw.div`
   flex
   justify-evenly
   flex-wrap
+
+  sm:mt-10
+  lg:mt-20
 `
 
 export const ButtonBGBlue = tw.div`
