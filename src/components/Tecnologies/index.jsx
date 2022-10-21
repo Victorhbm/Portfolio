@@ -22,7 +22,9 @@ export default function Tecnologies() {
   return (
     <section className="bg-dark-200 text-light">
       <Container>
-        <SectionTitle>My Skills</SectionTitle>
+        <SectionTitle>
+          My <span className="text-blue">Skills</span>
+        </SectionTitle>
 
         <IconContext.Provider value={{ size: "2em" }}>
           <SectionSubtitle>Frontend</SectionSubtitle>
