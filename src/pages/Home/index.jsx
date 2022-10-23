@@ -1,15 +1,18 @@
 import Header from "../../components/Header";
+import Projects from "../../components/Projects";
 import SectionAbout from "../../components/SectionAbout";
 import Tecnologies from "../../components/Tecnologies";
+import { Container, MainSection } from "./style";
 
 export default function Home() {
   return (
-    <div className="font-inter">
-      <div className="min-h-screen bg-dark text-light">
+    <Container>
+      <MainSection>
         <Header />
         <SectionAbout />
-      </div>
+      </MainSection>
       <Tecnologies />
-    </div>
+      <Projects />
+    </Container>
   )
 }
