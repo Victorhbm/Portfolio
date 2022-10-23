@@ -1,3 +1,4 @@
+import React from "react";
 import {
   SiJavascript,
   SiReact,
@@ -9,82 +10,74 @@ import {
   SiSequelize
 } from "react-icons/si";
 import { FaNode } from "react-icons/fa"
-import { IconContext } from "react-icons";
 import {
   SectionTitle,
   TecnologiesContainer,
   TecnologiesContent,
   SectionSubtitle,
-  Container
+  Container,
+  Section,
+  TitleSpan
 } from "./style";
+import skills from '../../assets/data/skills';
+
+const icons = {
+  JavaScript: SiJavascript,
+  TypeScript: SiTypescript,
+  React: SiReact,
+  'Tailwind CSS': SiTailwindcss,
+  'styled-components': SiStyledcomponents,
+  Node: FaNode,
+  MySQL: SiMysql,
+  MongoDB: SiMongodb,
+  Sequelize: SiSequelize,
+};
 
 export default function Tecnologies() {
   return (
-    <section className="bg-dark-200 text-light">
+    <Section>
       <Container>
         <SectionTitle>
-          My <span className="text-blue">Skills</span>
+          My <TitleSpan>Skills</TitleSpan>
         </SectionTitle>
 
-        <IconContext.Provider value={{ size: "2em" }}>
-          <SectionSubtitle>Frontend</SectionSubtitle>
-          <TecnologiesContainer>
+        <SectionSubtitle>Frontend</SectionSubtitle>
+        <TecnologiesContainer>
+          {skills.frontend.map((skill) => (
             <TecnologiesContent>
-              <SiJavascript className="mr-3 text-blue"/>
-              <p>JavaScript</p>
+              {React.createElement(icons[skill], {
+                key: skill,
+                size: "2em",
+                color: '#00D2DF'
+              })}
+              <p>{skill}</p>
             </TecnologiesContent>
-            <TecnologiesContent>
-              <SiTypescript className="mr-3 text-blue"/>
-              <p>TypeScript</p>
-            </TecnologiesContent>
-            <TecnologiesContent>
-              <SiReact className="mr-3 text-blue"/>
-              <p>React</p>
-            </TecnologiesContent>
-            <TecnologiesContent>
-              <SiTailwindcss className="mr-3 text-blue"/>
-              <p>Tailwind CSS</p>
-            </TecnologiesContent>
-            <TecnologiesContent>
-              <SiStyledcomponents className="mr-3 text-blue"/>
-              <p>styled-components</p>
-            </TecnologiesContent>
-          </TecnologiesContainer>
+          ))}
+        </TecnologiesContainer>
 
-          <SectionSubtitle>Backend</SectionSubtitle>
-          <TecnologiesContainer>
+        <SectionSubtitle>Backend</SectionSubtitle>
+        <TecnologiesContainer>
+          {skills.backend.map((skill) => (
             <TecnologiesContent>
-              <FaNode className="mr-3 text-blue"/>
-              <p>Node</p>
+              {React.createElement(icons[skill], {
+                key: skill,
+                size: "2em",
+                color: '#00D2DF'
+              })}
+              <p>{skill}</p>
             </TecnologiesContent>
-            <TecnologiesContent>
-              <SiMysql className="mr-3 text-blue"/>
-              <p>MySQL</p>
-            </TecnologiesContent>
-            <TecnologiesContent>
-              <SiMongodb className="mr-3 text-blue"/>
-              <p>MongoDB</p>
-            </TecnologiesContent>
-            <TecnologiesContent>
-              <SiSequelize className="mr-3 text-blue"/>
-              <p>Sequelize</p>
-            </TecnologiesContent>
-          </TecnologiesContainer>
-        </IconContext.Provider>
+          ))}
+        </TecnologiesContainer>
 
         <SectionSubtitle>Also know</SectionSubtitle>
         <TecnologiesContainer>
-          <TecnologiesContent>Python</TecnologiesContent>
-          <TecnologiesContent>Git & GitHub</TecnologiesContent>
-          <TecnologiesContent>REST API</TecnologiesContent>
-          <TecnologiesContent>OOP</TecnologiesContent>
-          <TecnologiesContent>SOLID</TecnologiesContent>
-          <TecnologiesContent>Docker</TecnologiesContent>
-          <TecnologiesContent>VS Code</TecnologiesContent>
-          <TecnologiesContent>Jest</TecnologiesContent>
-          <TecnologiesContent>Mocha, Chai & Sinon</TecnologiesContent>
+          {skills.others.map((skill) => (
+            <TecnologiesContent>
+              <p>{skill}</p>
+            </TecnologiesContent>
+          ))}
         </TecnologiesContainer>
       </Container>
-    </section>
+    </Section>
   )
 }
