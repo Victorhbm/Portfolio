@@ -3,6 +3,7 @@ import tw from "tailwind-styled-components";
 export const Container = tw.section`
   container
   mx-auto
+  mt-6
   max-w-[1200px]
   px-5
   py-10
@@ -24,8 +25,8 @@ export const ImgContainer = tw.div`
   ease-in-out
   hover:scale-110
   rounded-full
-  w-[200px]
-  h-[200px]
+  w-[250px]
+  h-[250px]
   lg:w-[400px]
   lg:h-[400px]
   md:w-[300px]
@@ -50,8 +51,8 @@ export const TextContainer = tw.div`
 `
 
 export const Title = tw.h1`
-  text-3xl
-  my-2
+  text-4xl
+  my-4
 
   lg:text-6xl
   sm:my-6
@@ -61,6 +62,7 @@ export const Title = tw.h1`
 `
 
 export const SubTitle = tw.h2`
+  text-xl
   font-normal
 
   portrait:tracking-[0.2em]
@@ -73,6 +75,7 @@ export const ButtonsContainer = tw.div`
   flex
   justify-evenly
   flex-wrap
+  gap-8
 
   sm:mt-10
   lg:mt-20
@@ -83,7 +86,6 @@ export const ButtonBGBlue = tw.div`
   hover:animate-linkedin-btn
   rounded-md
   grow
-  mr-7
   
   bg-gradient-to-tr
   from-purple-md
