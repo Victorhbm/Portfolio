@@ -12,7 +12,7 @@ export default function Projects() {
 
         <ProjectsContainer>
           {projects.map((data) => (
-            <ProjectCard {...data} />
+            <ProjectCard key={data.name} {...data} />
           ))}
         </ProjectsContainer>
       </Container>

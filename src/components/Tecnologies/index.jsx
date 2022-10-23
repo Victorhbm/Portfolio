@@ -44,9 +44,8 @@ export default function Tecnologies() {
         <SectionSubtitle>Frontend</SectionSubtitle>
         <TecnologiesContainer>
           {skills.frontend.map((skill) => (
-            <TecnologiesContent>
+            <TecnologiesContent key={skill}>
               {React.createElement(icons[skill], {
-                key: skill,
                 size: "2em",
                 color: '#00D2DF'
               })}
@@ -58,9 +57,8 @@ export default function Tecnologies() {
         <SectionSubtitle>Backend</SectionSubtitle>
         <TecnologiesContainer>
           {skills.backend.map((skill) => (
-            <TecnologiesContent>
+            <TecnologiesContent key={skill}>
               {React.createElement(icons[skill], {
-                key: skill,
                 size: "2em",
                 color: '#00D2DF'
               })}
@@ -72,7 +70,7 @@ export default function Tecnologies() {
         <SectionSubtitle>Also know</SectionSubtitle>
         <TecnologiesContainer>
           {skills.others.map((skill) => (
-            <TecnologiesContent>
+            <TecnologiesContent key={skill}>
               <p>{skill}</p>
             </TecnologiesContent>
           ))}
