@@ -2,7 +2,7 @@ import VictorPhoto from '../../assets/img/victor.jpg'
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 import { Button, ButtonBGBlue, ButtonBGPurple, ButtonsContainer, Container, ImgContainer, SubTitle, TextContainer, Title } from './style';
 
-export default function SectionAbout() {
+export default function Introductory() {
   return (
     <Container>
       <ImgContainer>
