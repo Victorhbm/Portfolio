@@ -6,12 +6,13 @@ export const Container = tw.section`
   mt-6
   max-w-[1200px]
   px-5
-  py-10
+  py-7
   flex
   flex-col
   justify-between
 
   sm:px-10
+  sm:py-10
   lg:xl:px-5
   landscape:flex-row-reverse
   landscape:mt-20
@@ -107,10 +108,14 @@ export const Button = tw.a`
   flex
   items-center
   w-full
-  bg-dark
   justify-center
   text-center
   py-2
   px-5
   rounded-md
+  text-base
+
+  sm:text-lg
+
+  bg-dark
 `

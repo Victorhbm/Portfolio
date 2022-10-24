@@ -6,18 +6,21 @@ export const Container = tw.div`
   mx-auto
   max-w-[1200px]
   px-5
-  py-7
+  py-4
   border-b-2
 
   sm:px-10
+  sm:py-7
   lg:xl:px-5
 
   border-dark-200
 `
 
 export const PortfolioLink = tw(Link)`
-  text-2xl
+  text-xl
   font-medium
+
+  sm:text-2xl
 
   text-blue
 `
