@@ -51,7 +51,8 @@ export const ButtonsContainer = tw.div`
   mt-5
   flex
   flex-wrap
-  gap-8
+  gap-x-5
+  gap-y-3
 `
 
 export const ButtonBGBlue = tw.div`
