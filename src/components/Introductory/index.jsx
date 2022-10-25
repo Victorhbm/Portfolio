@@ -1,6 +1,6 @@
 import VictorPhoto from '../../assets/img/victor.jpg'
 import { FiLinkedin, FiGithub } from "react-icons/fi";
-import { Button, ButtonBGBlue, ButtonBGPurple, ButtonsContainer, Container, ImgContainer, SubTitle, TextContainer, Title } from './style';
+import { Button, ButtonBGBlue, ButtonBGPurple, ButtonsContainer, Container, ContentContainer, ImgContainer, SubTitle, TextContainer, Title } from './style';
 
 export default function Introductory() {
   return (
@@ -9,7 +9,7 @@ export default function Introductory() {
         <img src={VictorPhoto} alt="Victor" />
       </ImgContainer>
 
-      <div className='text-lg'>
+      <ContentContainer>
         <TextContainer>
           <SubTitle>Hello, i am</SubTitle>
           <Title>Victor Hugo</Title>
@@ -31,7 +31,7 @@ export default function Introductory() {
             </Button>
           </ButtonBGPurple>
         </ButtonsContainer>
-      </div>
+      </ContentContainer>
     </Container>
   )
 }

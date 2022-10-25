@@ -43,6 +43,10 @@ export const ImgContainer = tw.div`
   bg-blue
 `
 
+export const ContentContainer = tw.div`
+  text-lg
+`
+
 export const TextContainer = tw.div`
   text-center
   uppercase
