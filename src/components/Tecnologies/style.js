@@ -11,16 +11,18 @@ export const Container = tw.div`
   max-w-[1200px]
   px-5
   py-7
-
   text-lg
+
+  sm:px-10
   md:text-xl
   md:py-14
+  lg:xl:px-5
 `
 
 export const SectionTitle = tw.h2`
   text-3xl
   uppercase
-  mb-7
+  mb-10
   font-semibold
 `
 
@@ -30,8 +32,8 @@ export const TitleSpan = tw.span`
 
 export const SectionSubtitle = tw.h3`
   text-2xl
-  mt-6
-  mb-3
+  mt-8
+  mb-5
 `
 
 export const TecnologiesContainer = tw.div`
