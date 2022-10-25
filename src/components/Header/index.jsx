@@ -24,7 +24,6 @@ export default function Header() {
           <PortfolioLink to="/">Portfolio</PortfolioLink>
           <nav className="portrait:hidden">
             <LandscapeLink to="/projects">Projects</LandscapeLink>
-            <LandscapeLink to="/about">About</LandscapeLink>
             <LandscapeLink to="/contact">Contact</LandscapeLink>
           </nav>
           <nav className="landscape:hidden">
@@ -39,7 +38,6 @@ export default function Header() {
         {isActive && (
           <PortraitNav>
             <PortraitLink to="/projects">Projects</PortraitLink>
-            <PortraitLink to="/about">About</PortraitLink>
             <PortraitLink to="/contact">Contact</PortraitLink>
           </PortraitNav>
         )}
