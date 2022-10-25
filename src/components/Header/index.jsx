@@ -1,13 +1,14 @@
 import { useState } from "react";
-import { MdMenu, MdClose } from "react-icons/md";
 import { IconContext } from "react-icons";
+import { MdClose, MdMenu } from "react-icons/md";
 import {
   Container,
   LandscapeLink,
   NavContainer,
   PortfolioLink,
   PortraitLink,
-  PortraitNav
+  PortraitNav,
+  StyledHeader
 } from "./style";
 
 export default function Header() {
@@ -18,7 +19,7 @@ export default function Header() {
   }
 
   return (
-    <header className="bg-dark text-light">
+    <StyledHeader>
       <Container>
         <NavContainer>
           <PortfolioLink to="/">Portfolio</PortfolioLink>
@@ -42,6 +43,6 @@ export default function Header() {
           </PortraitNav>
         )}
       </Container>
-    </header>
+    </StyledHeader>
   )
 }
