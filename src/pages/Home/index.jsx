@@ -4,6 +4,7 @@ import SectionAbout from "../../components/Introductory";
 import Tecnologies from "../../components/Tecnologies";
 import { Container, MainSection } from "./style";
 import Contact from "../../components/Contact";
+import Footer from "../../components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Tecnologies />
       <Projects />
       <Contact />
+      <Footer />
     </Container>
   )
 }
