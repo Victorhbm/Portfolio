@@ -1,6 +1,11 @@
 import tw from "tailwind-styled-components";
 import { Link } from "react-router-dom";
 
+export const StyledHeader = tw.header`
+  bg-dark
+  text-light
+`
+
 export const Container = tw.div`
   container
   mx-auto
