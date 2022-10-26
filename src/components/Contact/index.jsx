@@ -1,5 +1,5 @@
 import { GoMailRead } from 'react-icons/go';
-import { Button, Container, Input, InputContainer, MainContainer, Section, SectionTitle, TextArea, TitleSpan } from "./style";
+import { Button, Container, IconContainer, Input, InputContainer, MainContainer, Section, SectionTitle, TextArea, TitleSpan } from "./style";
 
 export default function Contact({ bgDark }) {
   return (
@@ -46,9 +46,9 @@ export default function Contact({ bgDark }) {
             </Button>
           </form>
 
-          <div className="portrait:hidden">
+          <IconContainer>
             <GoMailRead size="15rem" className="mx-auto" />
-          </div>
+          </IconContainer>
         </MainContainer>
       </Container>
     </Section>

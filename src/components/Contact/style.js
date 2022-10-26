@@ -32,9 +32,9 @@ export const TitleSpan = tw.span`
 `
 
 export const MainContainer = tw.div`
-  landscape:grid
-  landscape:grid-cols-2
-  landscape:gap-10
+  lg:grid
+  lg:grid-cols-2
+  lg:gap-10
 `
 
 export const InputContainer = tw.div`
@@ -76,4 +76,9 @@ export const Button = tw.button`
   text-dark-200
   bg-blue
   hover:bg-light
+`
+
+export const IconContainer = tw.div`
+  hidden
+  lg:block
 `
